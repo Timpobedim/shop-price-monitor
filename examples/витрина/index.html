@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Демо-витрина «Уютный дом» — страница 1 из 2</title>
+</head>
+<body>
+  <h1>Уютный дом — бытовая техника</h1>
+  <div id="catalog"></div>
+  <nav class="pagination"><a class="next" href="page-2.html">Следующая страница</a></nav>
+  <template id="cards">
+      <article class="product" data-sku="KT-01">
+        <h3><a href="product-KT-01.html" title="Чайник электрический 1,7 л">Чайник электрический 1,7 л</a></h3>
+        <p class="price">2 790,00 ₽</p>
+        <p class="stock in-stock">В наличии: 7 шт.</p>
+        <p class="rating" data-rating="4.5">рейтинг 4.5</p>
+      </article>
+      <article class="product" data-sku="BL-02">
+        <h3><a href="product-BL-02.html" title="Блендер погружной 800 Вт">Блендер погружной 800 Вт</a></h3>
+        <p class="price">3 440,00 ₽</p>
+        <p class="stock in-stock">В наличии: 3 шт.</p>
+        <p class="rating" data-rating="4.2">рейтинг 4.2</p>
+      </article>
+      <article class="product" data-sku="MG-03">
+        <h3><a href="product-MG-03.html" title="Микроволновая печь 20 л">Микроволновая печь 20 л</a></h3>
+        <p class="price">7 990,00 ₽</p>
+        <p class="stock out-of-stock">Нет в наличии</p>
+        <p class="rating" data-rating="4.0">рейтинг 4.0</p>
+      </article>
+      <article class="product" data-sku="UT-04">
+        <h3><a href="product-UT-04.html" title="Утюг с парогенератором">Утюг с парогенератором</a></h3>
+        <p class="price">5 490,00 ₽</p>
+        <p class="stock in-stock">В наличии: 5 шт.</p>
+        <p class="rating" data-rating="4.6">рейтинг 4.6</p>
+      </article>
+      <article class="product" data-sku="PL-05">
+        <h3><a href="product-PL-05.html" title="Пылесос вертикальный">Пылесос вертикальный</a></h3>
+        <p class="price">12 990,00 ₽</p>
+        <p class="stock in-stock">В наличии: 1 шт.</p>
+        <p class="rating" data-rating="4.4">рейтинг 4.4</p>
+      </article>
+      <article class="product" data-sku="TS-06">
+        <h3><a href="product-TS-06.html" title="Тостер на 2 слота">Тостер на 2 слота</a></h3>
+        <p class="price">1 990,00 ₽</p>
+        <p class="stock in-stock">В наличии: 12 шт.</p>
+        <p class="rating" data-rating="3.9">рейтинг 3.9</p>
+      </article>
+  </template>
+  <script>
+    setTimeout(function () {
+      var cards = document.getElementById("cards").content.cloneNode(true);
+      document.getElementById("catalog").appendChild(cards);
+    }, 300);
+  </script>
+</body>
+</html>

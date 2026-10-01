@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Демо-витрина «Уютный дом» — страница 2 из 2</title>
+</head>
+<body>
+  <h1>Уютный дом — бытовая техника</h1>
+  <div id="catalog"></div>
+  <nav class="pagination"><a class="previous" href="index.html">Назад</a></nav>
+  <template id="cards">
+      <article class="product" data-sku="KF-07">
+        <h3><a href="product-KF-07.html" title="Кофеварка рожковая">Кофеварка рожковая</a></h3>
+        <p class="price">8 990,00 ₽</p>
+        <p class="stock in-stock">В наличии: 4 шт.</p>
+        <p class="rating" data-rating="4.7">рейтинг 4.7</p>
+      </article>
+      <article class="product" data-sku="MX-08">
+        <h3><a href="product-MX-08.html" title="Миксер планетарный">Миксер планетарный</a></h3>
+        <p class="price">10 990,00 ₽</p>
+        <p class="stock in-stock">В наличии: 2 шт.</p>
+        <p class="rating" data-rating="4.8">рейтинг 4.8</p>
+      </article>
+      <article class="product" data-sku="VS-09">
+        <h3><a href="product-VS-09.html" title="Весы кухонные электронные">Весы кухонные электронные</a></h3>
+        <p class="price">890,00 ₽</p>
+        <p class="stock in-stock">В наличии: 25 шт.</p>
+        <p class="rating" data-rating="4.1">рейтинг 4.1</p>
+      </article>
+      <article class="product" data-sku="SV-10">
+        <h3><a href="product-SV-10.html" title="Сушилка для овощей">Сушилка для овощей</a></h3>
+        <p class="price">4 590,00 ₽</p>
+        <p class="stock in-stock">В наличии: 4 шт.</p>
+        <p class="rating" data-rating="3.7">рейтинг 3.7</p>
+      </article>
+      <article class="product" data-sku="CH-11">
+        <h3><a href="product-CH-11.html" title="Чайник заварочный стеклянный">Чайник заварочный стеклянный</a></h3>
+        <p class="price">1 290,00 ₽</p>
+        <p class="stock in-stock">В наличии: 9 шт.</p>
+        <p class="rating" data-rating="4.3">рейтинг 4.3</p>
+      </article>
+      <article class="product" data-sku="NW-13">
+        <h3><a href="product-NW-13.html" title="Соковыжималка шнековая">Соковыжималка шнековая</a></h3>
+        <p class="price">8 990,00 ₽</p>
+        <p class="stock in-stock">В наличии: 4 шт.</p>
+        <p class="rating" data-rating="4.8">рейтинг 4.8</p>
+      </article>
+  </template>
+  <script>
+    setTimeout(function () {
+      var cards = document.getElementById("cards").content.cloneNode(true);
+      document.getElementById("catalog").appendChild(cards);
+    }, 300);
+  </script>
+</body>
+</html>
